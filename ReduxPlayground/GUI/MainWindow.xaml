@@ -1,0 +1,14 @@
+﻿<Window x:Class="ReduxPlayground.GUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ReduxPlayground"
+        xmlns:blo="clr-namespace:ReduxPlayground.BLO"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <StackPanel>
+        <ProgressBar IsIndeterminate="True" Height="10" Margin="0,10,0,10"/>
+        <Button Content="LongRunning" Command="blo:Commands.LongRunningCommand"/>
+    </StackPanel>
+</Window>
